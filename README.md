@@ -1,16 +1,21 @@
-# flutter_application_3
+# Flutter Circle Task 2
 
-A new Flutter project.
+Screenshots 
+<h3> Menu Page</h3>
 
-## Getting Started
+![Menu Page](https://user-images.githubusercontent.com/70472388/135765860-aa408b84-d34a-4e9b-ab06-6c3865a848a2.png)
 
-This project is a starting point for a Flutter application.
+<hr>
+<br>
 
-A few resources to get you started if this is your first Flutter project:
+<h3> Scholarship News Page </h3>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Scholarship](https://user-images.githubusercontent.com/70472388/135765851-642a766f-feb2-415b-a546-02b17f653623.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<hr>
+<br>
+
+<h3> Tech News Page </h3>
+
+![Tech News](https://user-images.githubusercontent.com/70472388/135765848-4bb2777f-1512-495d-942f-e317ced22a2b.png)
+
