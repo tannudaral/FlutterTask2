@@ -12,8 +12,8 @@ class MenuPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.fromLTRB(0, 30, 0, 5),
-              height: 70,
+              padding: EdgeInsets.fromLTRB(0, 50, 0, 5),
+              height: 100,
               width: 500,
               color: Colors.white,
               child: Text(
@@ -29,7 +29,7 @@ class MenuPage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 30,
+              height: 10,
               width: 0,
             ),
             GestureDetector(
@@ -40,7 +40,7 @@ class MenuPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15.0),
                 child: Container(
                   child: Image(
-                    width: 380,
+                    width: 350,
                     image: AssetImage('assets/scholarship.png'),
                   ),
                 ),
@@ -58,7 +58,7 @@ class MenuPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15.0),
                 child: Container(
                   child: Image(
-                    width: 380,
+                    width: 350,
                     image: AssetImage('assets/tech.png'),
                   ),
                 ),

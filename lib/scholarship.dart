@@ -13,9 +13,9 @@ class Scholarship extends StatelessWidget {
             padding: const EdgeInsets.all(8),
             children: [
               Container(
-                // padding: EdgeInsets.fromLTRB(0, 20, 0, 5),
-                // height: 70,
-                // width: 500,
+                padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                height: 70,
+                width: 500,
                 color: Colors.white,
                 child: Text(
                   "Scholarships",
@@ -32,14 +32,8 @@ class Scholarship extends StatelessWidget {
               SizedBox(
                 height: 25,
               ),
-              ElevatedButton(
-                onPressed: _launchURL,
-                // Container(
-                  // padding: EdgeInsets.fromLTRB(2, 0, 0, 5),
-                  // height: 80,
-                  // width: 390,
-                  // color: Colors.white,
-                  child: Text("Amazon provides talented girls scholarships worth 5 lakh rupees",
+              InkWell(
+                child: Text("Amazon Future Engineer Program 2021 in India [1 Lakh Seats Available + Scholarship]",
                         textAlign: TextAlign.left,
                         style: TextStyle(
                         fontFamily: 'Aleo',
@@ -49,11 +43,12 @@ class Scholarship extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                  ),
-              SizedBox(
-                height: 15,
+                onTap: () => launch('https://www.noticebard.com/amazon-future-engineer-program-2021-in-india/'),
               ),
-            ClipRRect(
+              SizedBox(
+                height: 25,
+              ),
+              ClipRRect(
               borderRadius: BorderRadius.circular(15.0),
               child: Image(
                 width: 380,
@@ -64,15 +59,9 @@ class Scholarship extends StatelessWidget {
             SizedBox(
               height: 25,
             ),
-            ElevatedButton(
-              onPressed: _launchURL,
-            // Container(
-              // padding: EdgeInsets.fromLTRB(2, 0, 0, 5),
-              // height: 80,
-              // width: 390,
-              // color: Colors.white,
+            InkWell(
               child: Text(
-                "Facebook provides scholarships worth 5 lakh rupees to school students",
+                'Google offers students chance to win Rs 5 lakh scholarship',
                 textAlign: TextAlign.left,
                 style: TextStyle(
                   fontFamily: 'Aleo',
@@ -82,9 +71,10 @@ class Scholarship extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
+              onTap: () => launch('https://www.zeebiz.com/companies/news-google-offers-students-chance-to-win-rs-5-lakh-scholarship-all-you-need-to-know-about-this-new-competition-110743'),
             ),
               SizedBox(
-                height: 15,
+                height: 25,
               ),
             ClipRRect(
               borderRadius: BorderRadius.circular(15.0),
@@ -102,10 +92,10 @@ class Scholarship extends StatelessWidget {
             //   height: 80,
             //   width: 390,
             //   color: Colors.white,
-            ElevatedButton(
-              onPressed: _launchURL,
+            InkWell(
+              onTap: () => launch('https://www.tribuneindia.com/news/ludhiana/scholarships-worth-over-rs-2-5-lakh-distributed-among-underprivileged-26313'),
               child: Text(
-                "Facebook provides scholarships worth 5 lakh rupees to school students",
+                "Scholarships worth over Rs 2.5 lakh distributed among underprivileged",
                 textAlign: TextAlign.left,
                 style: TextStyle(
                   fontFamily: 'Aleo',
@@ -117,7 +107,7 @@ class Scholarship extends StatelessWidget {
               ),
             ),
               SizedBox(
-                height: 15,
+                height: 25,
               ),
             ClipRRect(
               borderRadius: BorderRadius.circular(15.0),
@@ -127,10 +117,13 @@ class Scholarship extends StatelessWidget {
                 image: AssetImage('assets/scholarship.png'),
               ),
             ),
-              ElevatedButton(
-                onPressed: _launchURL,
+            SizedBox(
+                height: 25,
+              ),
+              InkWell(
+                onTap: () => launch('https://www.thebetterindia.com/262310/national-scholarship-scheme-ministry-of-education-class-12-how-to-apply/'),
                 child: Text(
-                  "Facebook provides scholarships worth 5 lakh rupees to school students",
+                  "Ministry of Education Offers Scholarship Worth Rs 70,000 to Class 12 Graduates",
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontFamily: 'Aleo',
@@ -142,7 +135,7 @@ class Scholarship extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 15,
+                height: 25,
               ),
               ClipRRect(
                 borderRadius: BorderRadius.circular(15.0),
@@ -156,14 +149,5 @@ class Scholarship extends StatelessWidget {
           ),
         ),
     );
-  }
-}
-
-_launchURL() async {
-  const url = 'https://time.com/5101089/jeff-bezos-daca-dreamers-scholarship-donation';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
   }
 }
